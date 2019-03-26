@@ -8,48 +8,74 @@ body {}
 /*ШАПКА СТРАНИЦЫ*/
 header {
     min-width: 1920px;
-    height: 1024px;
+    min-height: 1024px;
     background-image: url(../img/photoheader.jpg);
 }
 
-.headerlogo {
-    color: #ffffff;
-    display: inline-block;
+.mainmenu {
+    display: flex;
     margin-left: 376px;
-    float: left;
-    width: 179px;
-    padding-top: 61px;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 181px;
+    text-decoration: none;
+    margin-top: 49px;
+    margin-right: 219px;
+}
+
+.logo-svg {
+    fill: #fff;
+}
+
+.logo-txt {
+    font-family: Raleway;
+    color: #ffffff;
+    font-size: 34px;
+    font-weight: 400;
+    text-align: right;
+}
+
+.logo:hover .logo-svg {
+    fill: #998675;
+    stroke: #fff;
+}
+
+.logo:hover .logo-txt {
+    color: #998675;
 }
 
 .headerlogo img {
     float: left;
 }
 
-.mainmenu ul li a {
+.mainmenu_nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+.mainmenu_nav ul li a {
+    display: block;
     text-decoration: none;
     font-family: Montserrat;
     color: #ffffff;
     font-size: 14px;
     font-weight: 300;
-    text-align: left;
 }
 
-.mainmenu ul li a:hover {
+.mainmenu_nav ul li a:hover {
     color: #c7b29a;
 }
 
-.mainmenu ul li {
+.mainmenu_nav ul li {
     list-style-type: none;
     display: inline-block;
     padding-right: 29px;
     padding-top: 61px;
 }
-
-.mainmenu {
-    display: inline-block;
-    margin-left: 219px;
-}
-
 
 .header_discript {
     margin-top: 309px;
@@ -111,25 +137,18 @@ header {
 /*БЛОК С МЕНЮ ВТОРОСТЕПЕННЫМ*/
 .menu {
     display: flex;
-    align-items: center;
     padding-top: 79px;
     justify-content: center;
-}
-
-
-.bottomline {
-    margin: 0 auto;
-    width: 70px;
-    border-bottom: 3px solid #f1eee9;
     margin-bottom: 80px;
 }
 
 .flexmenu {
     display: block;
-    margin: 0 34px 0 0;
+    padding: 0 33px 0 0;
+    width: 266px;
 }
 
-.flexmenu img {
+.flexmenu_img {
     display: block;
     margin: 0 auto;
     padding-bottom: 29px;
@@ -144,13 +163,39 @@ header {
 }
 
 .flexmenu p {
+    margin: 19px 0px 30px 0px;
+    padding: 0;
     text-align: center;
-    width: 267px;
-    font-family: Montserrat;
+    width: 266px;
+    min-height: 62px;
     color: #8c8c8c;
+    font-family: Montserrat;
     font-size: 14px;
     font-weight: 300;
     line-height: 24px;
+}
+
+.flexmenu:after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: #8c8c8c;
+    margin: 0 auto;
+    align-self: flex-end;
+}
+
+.flexmenu:hover span {
+    color: #c7b299;
+
+}
+
+.flexmenu:hover:after {
+    background-color: #c7b299;
+}
+
+.flexmenu:hover .flexmenu_img {
+    fill: #c7b299;
 }
 
 /*КОНЕЦ БЛОК С МЕНЮ ВТОРОСТЕПЕННЫМ*/
@@ -287,6 +332,7 @@ header {
 
 .our_latest {
     min-width: 1920px;
+    text-align: center;
 }
 
 .our_latest_title {
@@ -343,6 +389,7 @@ header {
 .our_latest_menu a:hover {
     border: 1px solid #998675;
     background-color: #998675;
+    color: white;
 }
 
 .our_latest_wrapper {
@@ -355,82 +402,156 @@ header {
 }
 
 .our_latest_article {
-    background-color: #fbfaf8;
     width: 370px;
     margin: 0;
     padding: 0;
 }
 
-/*
-.our_latest_article :hover {
-    background-color: #998675;
+.our_latest_article img {
+    display: block;
 }
-*/
 
-figcaption {
+.figcaption {
+    background-color: #fbfaf8;
     min-width: 370px;
     height: 100px;
+    text-align: left;
 }
 
-figcaption:before {
+.our_latest_article:before {
     content: "";
     position: absolute;
     width: 30px;
     height: 10px;
-    margin-top: -13px;
-    margin-left: 19px;
+    margin-top: 230px;
+    margin-left: -170px;
     background-image: url(/img/arrow.png);
     background-repeat: no-repeat;
-    background-position: center;
 }
 
-/*
-.figcaption:before:hover {
-    content: "";
-    position: absolute;
-    width: 30px;
-    height: 10px;
-    margin-top: -12px;
-    margin-left: 19px;
-    background-image: url(/img/arrowhover.png);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-*/
-
-.our_latest_article h2 {
-    padding: 0;
-    margin: 0;
-    font-family: Raleway;
-    color: #c7b29a;
-    font-size: 20px;
-    font-weight: 500;
-    text-align: left;
+.our_latest_header {
     padding-left: 28px;
     padding-top: 30px;
+    padding-bottom: 14px;
+    color: #c7b299;
+    font-family: Raleway;
+    font-size: 20px;
+    font-weight: 500;
 }
 
-.our_latest_article p {
-    padding: 0;
-    margin: 0;
-    font-family: Montserrat;
+.our_latest_txt {
+    padding-left: 30px;
     color: #d1d1d1;
+    font-family: Montserrat;
     font-size: 14px;
     font-weight: 300;
     line-height: 20px;
-    text-align: left;
+}
+
+.our_latest_article:hover .figcaption {
+    background-color: #362f2d;
+}
+
+.our_latest_article:hover:before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 10px;
+    margin-top: 230px;
+    margin-left: -170px;
+    background-image: url(/img/arrow_brown.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.our_latest_btn {
+    width: 170px;
+    box-shadow: inset 0 -3px 0 #736357;
+    border-radius: 3px;
+    background-color: #998675;
+    text-align: center;
+    margin-top: 40px;
+    display: inline-block;
+    padding: 21px;
+    text-decoration: none;
+    border: 1px solid #998675;
+    text-transform: uppercase;
+    font-family: Raleway;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 23px;
+    margin-bottom: 80px;
+}
+
+/*КОНЕЦ БЛОК СО СТАТЬЯМИ*/
+/*БЛОК С ВИДЕО*/
+
+.waxom_presentation {
+    width: 1920px;
+    min-height: 705px;
 }
 
 
 
+/*КОНЕЦ БЛОК С ВИДЕО*/
+.hand_fone {
+    width: 1920px;
+    height: 695px;
+    background-color: #fbfaf8;
+    background-image: url(/img/iPhone_in_hand.jpg);
+    background-repeat: no-repeat;
+    background-position: 423px 79px;
+}
 
+.hand_fone_title {
+    width: 407px;
+    height: 22px;
+    color: #555555;
+    font-family: Raleway;
+    font-size: 30px;
+    font-weight: 400;
+}
 
+.hand_fone_txt {
+    display: block;
+    width: 657px;
+    height: 99px;
+    color: #8c8c8c;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    width: 657px;
+}
 
+.hand_fone_list li {
+    list-style-type: none;
+    /*паддинг на глаз*/
+    padding-bottom: 10px;
+    color: #8c8c8c;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 32px;
+}
 
+.hand_fone_list li:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    margin-left: -35px;
+    margin-top: 4px;
+    background-image: url(/img/01.png);
+    background-repeat: no-repeat;
+}
 
-
-
-
-
-
-/*КОНЕЦ БЛОК СО СТАТЬЯМИ*/
+/**/
+.calc {
+    width: 1920px;
+    min-height: 300px;
+    background-color: #f4f5f8;
+    background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%);
+}
