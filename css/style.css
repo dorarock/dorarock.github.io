@@ -501,22 +501,27 @@ header {
 
 .waxom_presentation {
     width: 1920px;
-    min-height: 705px;
 }
 
-
+.waxom_presentation img {
+    display: block;
+}
 
 /*КОНЕЦ БЛОК С ВИДЕО*/
 .hand_fone {
     width: 1920px;
+/*МИНИМАЛЬНАЯ ВЫСОТА ДАЕТ ОТСТУП СНИЗУ!??*/
     height: 695px;
     background-color: #fbfaf8;
+/*КАК СДЕЛАТЬ КАРТИНКУ В ЦВЕТ ФОНА?*/
     background-image: url(/img/iPhone_in_hand.jpg);
     background-repeat: no-repeat;
     background-position: 423px 79px;
 }
 
 .hand_fone_title {
+    margin: 0;
+    padding: 0;
     width: 407px;
     height: 22px;
     color: #555555;
