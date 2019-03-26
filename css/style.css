@@ -118,7 +118,6 @@ header {
     padding: 21px;
     text-decoration: none;
     border-radius: 3px;
-    border: 1px solid #998675;
     background-color: #998675;
     width: 170px;
     text-transform: uppercase;
@@ -130,7 +129,7 @@ header {
 }
 
 .button:hover {
-    border: 1px solid white;
+    opacity: 0.8;
 }
 
 /*КОНЕЦ ШАПКА СТРАНИЦЫ*/
@@ -327,6 +326,11 @@ header {
     line-height: 23px;
 }
 
+.waxom_ideas_button:hover {
+    opacity: 0.60;
+}
+
+
 /*КОНЕЦ БЛОК С ВТОРЫМ СЛАЙДЕРОМ*/
 /*БЛОК СО СТАТЬЯМИ*/
 
@@ -448,6 +452,10 @@ header {
     line-height: 20px;
 }
 
+.our_latest_article:hover img{
+    opacity: 0.30;
+}
+
 .our_latest_article:hover .figcaption {
     background-color: #362f2d;
 }
@@ -482,6 +490,10 @@ header {
     font-weight: 700;
     line-height: 23px;
     margin-bottom: 80px;
+}
+
+.our_latest_btn:hover {
+    opacity: 0.60;
 }
 
 /*КОНЕЦ БЛОК СО СТАТЬЯМИ*/
