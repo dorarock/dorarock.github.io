@@ -15,6 +15,7 @@ header {
 .mainmenu {
     display: flex;
     margin-left: 376px;
+
 }
 
 .logo {
@@ -77,8 +78,24 @@ header {
     padding-top: 61px;
 }
 
+.arow_left {
+    position: relative;
+    display: block;
+    top: 379px;
+    left: 150px;
+}
+
+.arow_right {
+    position: relative;
+    display: block;
+    transform: scaleX(-1);
+    top: 306px;
+    left: 1730px;
+    
+}
+
 .header_discript {
-    margin-top: 309px;
+    margin-top: 160px;
     text-align: center;
 }
 
@@ -163,7 +180,6 @@ header {
 
 .flexmenu p {
     margin: 19px 0px 30px 0px;
-    padding: 0;
     text-align: center;
     width: 266px;
     min-height: 62px;
@@ -199,7 +215,6 @@ header {
 
 /*КОНЕЦ БЛОК С МЕНЮ ВТОРОСТЕПЕННЫМ*/
 /*БЛОК С 2М СЛАЙДЕРОМ*/
-
 .waxom_ideas {
     min-width: 1920px;
     /*    height: 700px;*/
@@ -208,10 +223,10 @@ header {
 }
 
 .waxom_ideas h2 {
-    font-family: Raleway;
+    font-family: 'Raleway';
     color: #555555;
     font-size: 30px;
-    font-weight: 600;
+    font-weight: 400;
     margin: 0;
     padding: 0;
     padding-top: 83px;
@@ -278,17 +293,20 @@ header {
 }
 
 .waxom_ideas_title {
-    width: 530px;
+    min-width: 530px;
     padding: 0;
     margin: 0;
-    font-family: Raleway;
+    font-family: 'Raleway';
     color: #ffffff;
     font-size: 28px;
-    /* Приближение из-за подстановки шрифтов */
     font-weight: 400;
     margin-left: 376px;
     padding-top: 48px;
     margin-bottom: 8px;
+}
+
+.waxom_ideas_title span {
+    color: #c7b299;
 }
 
 .waxom_ideas_discr {
@@ -304,25 +322,32 @@ header {
     width: 530px;
 }
 
+/*
 .waxom_right {
     display: inline-block;
     float: right;
     padding-right: 374px;
     margin-top: 70px;
 }
+*/
 
 .waxom_ideas_button {
+    display: inline-block;
+    /*ЗНАЧЕНИЕ ПРИБЛИЖЕНО - РАЗОБРАТЬСЯ*/
+    margin-top: 40px;
+    margin-left: 370px;
+    /*    */
     text-decoration: none;
     padding: 20px;
     border-radius: 3px;
     background-color: #998675;
     width: 170px;
-    font-family: Raleway;
+    font-family: 'Raleway';
     text-transform: uppercase;
     text-align: center;
     color: #ffffff;
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 23px;
 }
 
@@ -342,7 +367,7 @@ header {
 .our_latest_title {
     margin: 0;
     padding: 0;
-    font-family: Raleway;
+    font-family: 'Raleway';
     color: #555555;
     font-size: 30px;
     font-weight: 600;
@@ -369,25 +394,27 @@ header {
 .our_latest_menu {
     display: flex;
     justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
-.our_latest_menu ul li {
-    list-style-type: none;
-    display: inline-block;
-    margin-right: 15px;
-}
-
-.our_latest_menu li a {
-    display: block;
-    padding: 11px 27px 11px 27px;
-    text-decoration: none;
-    font-family: Montserrat;
+.our_latest_menu_btn {
+    min-height: 32px;
+    border-radius: 4px;
+    border: 1px solid #ebebeb;
+    background-color: white;
     color: #8c8c8c;
-    border: 1px solid #998675;
-    border-radius: 3px;
+    font-family: 'Montserrat';
     font-size: 14px;
     font-weight: 300;
     line-height: 21px;
+    padding: 10px 24px 8px 24px;
+    margin-left: 10px;
+}
+
+.our_latest_menu_btn:hover {
+    background-color: #998675;
+    color: white;
 }
 
 .our_latest_menu a:hover {
@@ -402,7 +429,6 @@ header {
     grid-gap: 30px;
     grid-row-gap: 30px;
     justify-content: center;
-    margin-top: 40px;
 }
 
 .our_latest_article {
@@ -429,7 +455,7 @@ header {
     height: 10px;
     margin-top: 230px;
     margin-left: -170px;
-    background-image: url(/img/arrow.png);
+    background-image: url(../img/arrow.png);
     background-repeat: no-repeat;
 }
 
@@ -452,9 +478,11 @@ header {
     line-height: 20px;
 }
 
-.our_latest_article:hover img{
+/*
+.our_latest_article:hover img {
     opacity: 0.30;
 }
+*/
 
 .our_latest_article:hover .figcaption {
     background-color: #362f2d;
@@ -467,7 +495,7 @@ header {
     height: 10px;
     margin-top: 230px;
     margin-left: -170px;
-    background-image: url(/img/arrow_brown.png);
+    background-image: url(../img/arrow_brown.png);
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -497,8 +525,8 @@ header {
 }
 
 /*КОНЕЦ БЛОК СО СТАТЬЯМИ*/
-/*БЛОК С ВИДЕО*/
 
+/*БЛОК С ВИДЕО*/
 .waxom_presentation {
     width: 1920px;
 }
@@ -508,24 +536,31 @@ header {
 }
 
 /*КОНЕЦ БЛОК С ВИДЕО*/
+/*БЛОК С АЙФОНОМ*/
 .hand_fone {
     width: 1920px;
-/*МИНИМАЛЬНАЯ ВЫСОТА ДАЕТ ОТСТУП СНИЗУ!??*/
+    /*МИНИМАЛЬНАЯ ВЫСОТА ДАЕТ ОТСТУП СНИЗУ!??*/
     height: 695px;
     background-color: #fbfaf8;
-/*КАК СДЕЛАТЬ КАРТИНКУ В ЦВЕТ ФОНА?*/
-    background-image: url(/img/iPhone_in_hand.jpg);
+    background-image: url(../img/iPhone_in_hand2.png);
     background-repeat: no-repeat;
-    background-position: 423px 79px;
+    background-position: 423px 80px;
+}
+
+.hand_fone_wrapper {
+    position: relative;
+    left: 877px;
+    top: 195px;
 }
 
 .hand_fone_title {
     margin: 0;
     padding: 0;
+    margin-bottom: 40px;
     width: 407px;
     height: 22px;
     color: #555555;
-    font-family: Raleway;
+    font-family: 'Raleway';
     font-size: 30px;
     font-weight: 400;
 }
@@ -533,9 +568,10 @@ header {
 .hand_fone_txt {
     display: block;
     width: 657px;
-    height: 99px;
+    min-height: 99px;
+    margin-bottom: 40px;
     color: #8c8c8c;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-size: 16px;
     font-weight: 300;
     line-height: 28px;
@@ -545,12 +581,13 @@ header {
 .hand_fone_list li {
     list-style-type: none;
     /*паддинг на глаз*/
-    padding-bottom: 10px;
+    padding-bottom: 12px;
     color: #8c8c8c;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-size: 16px;
     font-weight: 300;
     line-height: 32px;
+    margin-left: 50px;
 }
 
 .hand_fone_list li:before {
@@ -559,16 +596,19 @@ header {
     position: absolute;
     width: 21px;
     height: 21px;
-    margin-left: -35px;
+    margin-left: -50px;
     margin-top: 4px;
-    background-image: url(/img/01.png);
+    background-image: url(../img/01.png);
     background-repeat: no-repeat;
 }
 
-/**/
+/*КОНЕЦ БЛОК С АЙФОНОМ*/
+/*БЛОК С КАЛЬКУЛЯТОРОМ*/
 .calc {
     width: 1920px;
     min-height: 300px;
     background-color: #f4f5f8;
     background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%);
 }
+
+/*КОНЕЦ БЛОК С КАЛЬКУЛЯТОРОМ*/
