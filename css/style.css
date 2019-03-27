@@ -81,21 +81,32 @@ header {
 .arow_left {
     position: relative;
     display: block;
-    top: 379px;
+    float: left;
+    width: 40px;
+    height: 73px;
     left: 150px;
+    top: 94px; 
+}
+
+.arow_left:hover {
+    opacity: 0.3;
 }
 
 .arow_right {
     position: relative;
     display: block;
     transform: scaleX(-1);
-    top: 306px;
-    left: 1730px;
-    
+    float: right;
+    right: 150px;
+    top: 94px;
+}
+
+.arow_right:hover {
+    opacity: 0.3;
 }
 
 .header_discript {
-    margin-top: 160px;
+    padding-top: 309px;
     text-align: center;
 }
 
