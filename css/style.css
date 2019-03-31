@@ -79,13 +79,13 @@ header {
 }
 
 .arow_left {
-    position: relative;
+    position: absolute;
     display: block;
     float: left;
     width: 40px;
     height: 73px;
     left: 150px;
-    top: 94px; 
+    top: 450px;
 }
 
 .arow_left:hover {
@@ -93,12 +93,12 @@ header {
 }
 
 .arow_right {
-    position: relative;
+    position: absolute;
     display: block;
     transform: scaleX(-1);
     float: right;
     right: 150px;
-    top: 94px;
+    top: 450px;
 }
 
 .arow_right:hover {
@@ -106,6 +106,7 @@ header {
 }
 
 .header_discript {
+    /*    position: relative;*/
     padding-top: 309px;
     text-align: center;
 }
@@ -459,13 +460,13 @@ header {
     text-align: left;
 }
 
-.our_latest_article:before {
+.figcaption:before {
     content: "";
     position: absolute;
     width: 30px;
     height: 10px;
-    margin-top: 230px;
-    margin-left: -170px;
+    margin-top: -9px;
+    margin-left: 19px;
     background-image: url(../img/arrow.png);
     background-repeat: no-repeat;
 }
@@ -499,16 +500,16 @@ header {
     background-color: #362f2d;
 }
 
-.our_latest_article:hover:before {
+
+.our_latest_article:hover .figcaption:before {
     content: "";
     position: absolute;
     width: 30px;
     height: 10px;
-    margin-top: 230px;
-    margin-left: -170px;
+    margin-top: -9px;
+    margin-left: 19px;
     background-image: url(../img/arrow_brown.png);
     background-repeat: no-repeat;
-    background-position: center;
 }
 
 .our_latest_btn {
@@ -617,9 +618,250 @@ header {
 /*БЛОК С КАЛЬКУЛЯТОРОМ*/
 .calc {
     width: 1920px;
-    min-height: 300px;
+    /*    min-height: 300px;*/
     background-color: #f4f5f8;
     background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%);
+    text-align: center;
+}
+
+.calc_figure {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.calc_figure:after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    align-self: flex-end;
+}
+
+.calc_icon {
+    padding-top: 60px;
+    fill: #c7b299;
+}
+
+.calc_number {
+    display: block;
+    color: #ffffff;
+    font-family: "Montserrat - Ultra Light";
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 36px;
+    margin-top: 30px;
+}
+
+.calc_txt {
+    display: block;
+    color: #c7b299;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-top: 21px;
 }
 
 /*КОНЕЦ БЛОК С КАЛЬКУЛЯТОРОМ*/
+/*БЛОК С ПОСТАМИ*/
+.posts_wrapper {
+    width: 100%;
+    padding-top: 82px;
+}
+
+.posts_header {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+    color: #555555;
+    font-family: 'Raleway - Semi Bold';
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.posts_txt {
+    display: block;
+    margin: 0;
+    padding: 0;
+    margin-left: 583px;
+    width: 757px;
+    min-height: 43px;
+    color: #8c8c8c;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    text-align: center;
+}
+
+.posts_flex {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+/*
+.posts_flex:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    background-image: url(../img/right.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+*/
+
+.posts_article {
+    width: 370px;
+    border: 1px solid #fcfcfc;
+    margin-right: 30px;
+    position: relative;
+}
+
+.posts_article:hover {
+    background-color: #362f2d;
+}
+
+.posts_article:hover .posts_read_more {
+    color: #c7b299;
+}
+
+.posts_read_more:hover {
+  opacity: 0.6;
+}
+
+.posts_article:hover .posts_article_header {
+    color: #c7b299;
+}
+
+.posts_img {
+    display: block;
+}
+
+.posts_article_header {
+    display: block;
+    color: #555555;
+    font-family: 'Raleway';
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 29px;
+    margin-top: 30px;
+}
+
+.posts_article_txt {
+    display: block;
+    width: 297px;
+    height: 36px;
+    color: #8c8c8c;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding-left: 29px;
+    margin-top: 19px;
+}
+
+.posts_read_more {
+    display: block;
+    min-width: 74px;
+    color: #c7b299;
+    font-family: 'Montserrat';
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    margin-left: 30px;
+    margin-top: 40px;
+    margin-bottom: 33px;
+}
+
+.posts_read_more:after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 8px;
+    margin-left: 9px;
+    margin-top: 6px;
+    background-image: url(../img/read_more_arrow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.posts_data {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+}
+
+.data {
+    display: block;
+    text-align: center;
+    width: 50px;
+    height: 30px;
+    padding-top: 9px;
+    background-color: #363636;
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 20px;
+    border-radius: 3px 3px 0 0;
+}
+
+.time {
+    display: block;
+    text-align: center;
+    width: 50px;
+    height: 20px;
+    padding-top: 7px;
+    background-color: #363636;
+    border-radius: 0 0 3px 3px;
+    background-color: #252525;
+    color: #ffffff;
+    font-family: 'Roboto';
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    border-radius: 0 0 3px 3px;
+}
+
+.posts_article:hover .time {
+    background-color: #c7b299;
+}
+
+.posts_article:hover .data {
+    background-color: #c7b299;
+}
+
+/*КОНЕЦ БЛОК С ПОСТАМИ*/
+.partners_flex {
+    display: flex;
+    justify-content: center;
+}
+
+.partners {
+    margin-top: 142px;
+    width: 100%;
+    min-height: 489px;
+    background-image: url(../img/back.jpg);
+}
+
+.partners_src {
+    margin-right: 90px;
+    margin-top: 160px;
+    display: block;
+}
+
+.partners_src:hover img{
+    opacity: 0.6;
+}
