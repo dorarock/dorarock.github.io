@@ -19,7 +19,7 @@ header {
 .mainmenu {
     display: flex;
     margin-left: 376px;
-
+    padding-top: 40px;
 }
 
 .logo {
@@ -28,7 +28,6 @@ header {
     align-items: center;
     width: 181px;
     text-decoration: none;
-    margin-top: 49px;
     margin-right: 219px;
 }
 
@@ -57,6 +56,10 @@ header {
     float: left;
 }
 
+.mainmenu_nav {
+    padding-top: 21px;
+}
+
 .mainmenu_nav ul {
     margin: 0;
     padding: 0;
@@ -65,7 +68,7 @@ header {
 .mainmenu_nav ul li a {
     display: block;
     text-decoration: none;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     color: #ffffff;
     font-size: 14px;
     font-weight: 300;
@@ -79,7 +82,42 @@ header {
     list-style-type: none;
     display: inline-block;
     padding-right: 29px;
-    padding-top: 61px;
+
+}
+
+.cart {
+    fill: white;
+    margin-left: 63px;
+}
+
+.cart:hover {
+    opacity: 0.4;
+}
+
+.menu_button {
+    padding-top: 15px;
+}
+
+input[type="search"]:hover {
+    opacity: 0.4;
+}
+
+input[type="search"] {
+    width: 24px;
+    height: 24px;
+    outline: none;
+    background-image: url(../img/icon-search.png);
+    background-size: contain;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: 1px solid transparent;
+    margin-left: 28px;
+}
+
+input[type="search"]:focus {
+    width: 300px;
+    transition: width 1s ease-out;
+    background-position: right;
 }
 
 .arow_left {
@@ -162,6 +200,7 @@ header {
     text-decoration: none;
     border-radius: 3px;
     background-color: #998675;
+    box-shadow: inset 0 -3px 0 #736357;
     width: 170px;
     text-transform: uppercase;
     font-family: Raleway;
@@ -349,6 +388,7 @@ header {
     padding: 20px;
     border-radius: 3px;
     background-color: #998675;
+    box-shadow: inset 0 -3px 0 #736357;
     width: 170px;
     font-family: 'Raleway';
     text-transform: uppercase;
@@ -442,6 +482,32 @@ header {
     width: 370px;
     margin: 0;
     padding: 0;
+    position: relative;
+}
+
+.our_latest_link,
+.our_latest_search {
+    width: 26px;
+    height: 26px;
+    display: none;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 106px;
+}
+
+.our_latest_link {
+    background-image: url(../img/link.png);
+    left: 40%;
+}
+
+.our_latest_search {
+    background-image: url(../img/lupa.png);
+    right: 40%;
 }
 
 .our_latest_article img {
@@ -487,6 +553,22 @@ header {
 
 .our_latest_article:hover img {
     filter: brightness(40%);
+}
+
+.our_latest_article:hover .our_latest_link {
+    display: block;
+}
+
+.our_latest_article:hover .our_latest_search:hover {
+    opacity: 0.4;
+}
+
+.our_latest_article:hover .our_latest_link:hover {
+    opacity: 0.4;
+}
+
+.our_latest_article:hover .our_latest_search {
+    display: block;
 }
 
 .our_latest_article:hover .figcaption {
@@ -723,7 +805,7 @@ header {
     background-color: #362f2d;
 }
 
-.posts_article:hover img{
+.posts_article:hover img {
     filter: brightness(40%);
 }
 
@@ -839,9 +921,13 @@ header {
 }
 
 /*КОНЕЦ БЛОК С ПОСТАМИ*/
+
+
+/*Блок с партнерами  */
 .partners_flex {
     display: flex;
     justify-content: center;
+
 }
 
 .partners {
@@ -849,7 +935,7 @@ header {
     width: 100%;
     min-height: 489px;
     background-image: url(../img/back.jpg);
-/*    filter: brightness(40%);*/
+    /*    filter: brightness(40%);*/
 }
 
 .partners_src {
@@ -860,4 +946,236 @@ header {
 
 .partners_src:hover img {
     opacity: 0.6;
+}
+
+/*Конец Блок с партнерами  */
+/* ПОДВАЛ1 */
+.footer_wrapper {
+    width: 100%;
+    min-height: 508px;
+    background-color: #191919;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    padding-top: 80px;
+}
+
+.about_waxom {
+    width: 262px;
+    margin-right: 40px;
+}
+
+.logo_footer {}
+
+.about_waxom_txt {
+    width: 258px;
+    color: #555555;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    padding: 0;
+    margin: 0;
+    margin-top: 29px;
+    margin-bottom: 33px;
+}
+
+.about_waxom_more {
+    min-width: 74px;
+    color: #d1d1d1;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-decoration: none;
+}
+
+.about_waxom_more:after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 8px;
+    margin-left: 9px;
+    margin-top: 6px;
+    background-image: url(../img/read_more_arrow_w.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.about_waxom_more:hover {
+    opacity: 0.4;
+}
+
+.recent_posts,
+.out_twitter {
+    width: 280px;
+    margin-right: 40px;
+}
+
+.footer_title {
+    color: #ffffff;
+    font-family: 'Raleway';
+    font-size: 24px;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+    padding-top: 28px;
+    margin-bottom: 30px;
+}
+
+.datetime_posts,
+.out_twitter_tame {
+    width: 117px;
+    color: #363636;
+    font-family: 'Montserrat';
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+.recent_posts_txt {
+    width: 250px;
+    color: #555555;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    display: block;
+}
+
+.out_twitter_wrapper {
+    padding-bottom: 21px;
+}
+
+.recent_posts a:last-child .recent_posts_txt {
+    border-bottom: none;
+}
+
+.out_twitter_wrapper:last-child .out_twitter_post {
+    border-bottom: none;
+}
+
+.recent_posts_src:hover .datetime_posts {
+    color: #ffffff;
+    transition: all .5s ease-out;
+}
+
+
+.recent_posts_src:hover .recent_posts_txt {
+    color: #c7b299;
+    transition: all .5s ease-out;
+}
+
+/* .recent_posts_src:visited .recent_posts_txt {
+    color: aqua;
+} */
+
+.datetime_posts {
+    display: block;
+    transition: all .5s ease-out;
+}
+
+.recent_posts_txt {
+    padding-bottom: 20px;
+    display: block;
+    width: 262px;
+    border-bottom: 1px solid #333333;
+}
+
+.recent_posts_src {
+    text-decoration: none;
+    display: block;
+    transition: all .5s ease-out;
+    padding-bottom: 21px;
+}
+
+.out_twitter_tame {
+    display: block;
+    padding-bottom: 14px;
+    padding-top: 6px;
+}
+
+.out_twitter_post {
+    color: #555555;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    display: block;
+    border-bottom: 1px solid #333333;
+}
+
+.out_twitter_post a {
+    color: #02b4e5;
+    text-decoration: none;
+}
+
+.out_twitter_post a:hover {
+    opacity: 0.4;
+}
+
+.out_twitter_post a:visited {
+    color: aqua;
+}
+
+.dribbble_widget {
+    width: 300px;
+}
+
+.dribbble_widget a {
+    display: block;
+    width: 130px;
+    height: 98px;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: all .7s ease-out;
+}
+
+.dribbble_widget_img:hover {
+    opacity: 0.4;
+    transition: all .7s ease-out;
+}
+
+/* КОНЕЦПОДВАЛ1 */
+.footer_copy {
+    width: 100%;
+    min-height: 111px;
+    background-color: #111111;
+    display: flex;
+    justify-content: space-around;
+}
+
+.copyright span {
+    /* Style for "Copyright" */
+    width: 401px;
+    height: 14px;
+    color: #555555;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 20px;
+    /* Text style for "Waxom" */
+    color: #959595;
+    /* Text style for "|   ,    |" */
+    color: #252525;
+    /* Text style for "FAQ" */
+    color: #c7b299;
+}
+
+.disignet span {
+    width: 401px;
+    height: 14px;
+    color: #555555;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 20px;
+    /* Text style for "Waxom" */
+    color: #959595;
+    /* Text style for "|   ,    |" */
+    color: #252525;
+    /* Text style for "FAQ" */
+    color: #c7b299;
 }
