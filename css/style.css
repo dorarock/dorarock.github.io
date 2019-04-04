@@ -7,9 +7,13 @@ body {}
 
 /*ШАПКА СТРАНИЦЫ*/
 header {
-    min-width: 1920px;
+    width: 100%;
     min-height: 1024px;
     background-image: url(../img/photoheader.jpg);
+    background-color: aliceblue;
+    background-repeat: no-repeat;
+    background-position: cover;
+    position: relative;
 }
 
 .mainmenu {
@@ -81,6 +85,11 @@ header {
 .arow_left {
     position: absolute;
     display: block;
+    width: 40px;
+    height: 73px;
+    background-image: url(../img/arrow-left.png);
+    background-position: center;
+    background-repeat: no-repeat;
     float: left;
     width: 40px;
     height: 73px;
@@ -95,6 +104,11 @@ header {
 .arow_right {
     position: absolute;
     display: block;
+    width: 40px;
+    height: 73px;
+    background-image: url(../img/arrow-left.png);
+    background-position: center;
+    background-repeat: no-repeat;
     transform: scaleX(-1);
     float: right;
     right: 150px;
@@ -228,8 +242,7 @@ header {
 /*КОНЕЦ БЛОК С МЕНЮ ВТОРОСТЕПЕННЫМ*/
 /*БЛОК С 2М СЛАЙДЕРОМ*/
 .waxom_ideas {
-    min-width: 1920px;
-    /*    height: 700px;*/
+    width: 100%;
     background-color: #fbfaf8;
     overflow: hidden;
 }
@@ -284,7 +297,7 @@ header {
 /*подвал блока */
 
 .waxom_ideas_footer {
-    min-width: 1920px;
+    width: 100%;
     min-height: 150px;
     background: -webkit-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
     background: -moz-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
@@ -292,13 +305,6 @@ header {
     background: -ms-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
     background: linear-gradient(90deg, #211b19 0%, #4e3427 100%);
 }
-
-/*
-.waxom_ideas_footer:after {
-    content: "";
-    clear: both;
-}
-*/
 
 .waxom_left {
     float: left;
@@ -334,21 +340,11 @@ header {
     width: 530px;
 }
 
-/*
-.waxom_right {
-    display: inline-block;
-    float: right;
-    padding-right: 374px;
-    margin-top: 70px;
-}
-*/
-
 .waxom_ideas_button {
     display: inline-block;
     /*ЗНАЧЕНИЕ ПРИБЛИЖЕНО - РАЗОБРАТЬСЯ*/
     margin-top: 40px;
     margin-left: 370px;
-    /*    */
     text-decoration: none;
     padding: 20px;
     border-radius: 3px;
@@ -372,7 +368,7 @@ header {
 /*БЛОК СО СТАТЬЯМИ*/
 
 .our_latest {
-    min-width: 1920px;
+    width: 100%;
     text-align: center;
 }
 
@@ -396,7 +392,6 @@ header {
     font-weight: 300;
     line-height: 28px;
     text-align: center;
-    /*    margin-bottom: 45px;*/
 }
 
 .our_latest span {
@@ -490,16 +485,13 @@ header {
     line-height: 20px;
 }
 
-/*
 .our_latest_article:hover img {
-    opacity: 0.30;
+    filter: brightness(40%);
 }
-*/
 
 .our_latest_article:hover .figcaption {
     background-color: #362f2d;
 }
-
 
 .our_latest_article:hover .figcaption:before {
     content: "";
@@ -550,7 +542,7 @@ header {
 /*КОНЕЦ БЛОК С ВИДЕО*/
 /*БЛОК С АЙФОНОМ*/
 .hand_fone {
-    width: 1920px;
+    width: 100%;
     /*МИНИМАЛЬНАЯ ВЫСОТА ДАЕТ ОТСТУП СНИЗУ!??*/
     height: 695px;
     background-color: #fbfaf8;
@@ -617,7 +609,7 @@ header {
 /*КОНЕЦ БЛОК С АЙФОНОМ*/
 /*БЛОК С КАЛЬКУЛЯТОРОМ*/
 .calc {
-    width: 1920px;
+    width: 100%;
     /*    min-height: 300px;*/
     background-color: #f4f5f8;
     background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%);
@@ -731,12 +723,16 @@ header {
     background-color: #362f2d;
 }
 
+.posts_article:hover img{
+    filter: brightness(40%);
+}
+
 .posts_article:hover .posts_read_more {
     color: #c7b299;
 }
 
 .posts_read_more:hover {
-  opacity: 0.6;
+    opacity: 0.6;
 }
 
 .posts_article:hover .posts_article_header {
@@ -800,7 +796,6 @@ header {
     position: absolute;
     top: 20px;
     left: 20px;
-
 }
 
 .data {
@@ -854,6 +849,7 @@ header {
     width: 100%;
     min-height: 489px;
     background-image: url(../img/back.jpg);
+/*    filter: brightness(40%);*/
 }
 
 .partners_src {
@@ -862,6 +858,6 @@ header {
     display: block;
 }
 
-.partners_src:hover img{
+.partners_src:hover img {
     opacity: 0.6;
 }
