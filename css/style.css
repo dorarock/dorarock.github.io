@@ -542,6 +542,7 @@ input[type="search"]:focus {
     background-color: transparent;
     position: absolute;
     top: 106px;
+    outline: none;
 }
 
 .our_latest_link {
