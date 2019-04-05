@@ -543,17 +543,18 @@ input[type="search"]:focus {
     background-color: transparent;
     position: absolute;
     top: 106px;
-    outline: none;
 }
 
 .our_latest_link {
     background-image: url(../img/link.png);
     left: 40%;
+    outline: none;
 }
 
 .our_latest_search {
     background-image: url(../img/lupa.png);
     right: 40%;
+    outline: none;
 }
 
 .our_latest_article img {
