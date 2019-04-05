@@ -612,10 +612,12 @@ input[type="search"]:focus {
 
 .our_latest_article:hover .our_latest_search:hover {
     opacity: 0.4;
+    outline: none;
 }
 
 .our_latest_article:hover .our_latest_link:hover {
     opacity: 0.4;
+    outline: none;
 }
 
 .our_latest_article:hover .our_latest_search {
