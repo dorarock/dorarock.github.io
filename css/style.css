@@ -23,9 +23,7 @@
     src: url(../fonts/raleway/raleway-extrabold.ttf);
 }
 
-body {
-    box-sizing: border-box;
-}
+body {}
 
 .container {
     width: 1920px;
@@ -1320,14 +1318,15 @@ input[type="search"]:focus {
     color: #959595;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 576px) {
 
     .body {
         background-color: aqua;
+        width: 575.98px;
     }
 
     .container {
-        width: 100%;
+        width: 575.98px;
     }
 
     .mainmenu {
@@ -1352,6 +1351,11 @@ input[type="search"]:focus {
         grid-gap: 15px;
         grid-row-gap: 15px;
         justify-content: center;
+    }
+
+    .flexmenu {
+        padding: 0;
+        margin: 0;
     }
 
     .waxom_ideas {
@@ -1387,7 +1391,7 @@ input[type="search"]:focus {
     .waxom_video_presentation_item h2 {
         font-size: 15px;
     }
-    
+
     .waxom_video_presentation_item span {
         font-size: 10px;
         width: auto;
