@@ -1356,7 +1356,9 @@ input[type="checkbox"]:checked ~ .menu_ul {
     display: inline-block;
     text-decoration: none;
     border-right: 1px solid #252525;
-    padding-right: 5px;
+    border-left: 1px solid #252525;
+    padding-right: 7px;
+    padding-left: 7px;
 }
 
 .faq_link:hover {
@@ -1383,6 +1385,10 @@ input[type="checkbox"]:checked ~ .menu_ul {
     text-decoration: none;
     border-right: 1px solid #252525;
     padding-right: 5px;
+}
+
+.disignet .link_last {
+    border-right: none;
 }
 
 .disignet_link:hover {
