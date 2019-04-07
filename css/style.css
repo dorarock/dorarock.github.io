@@ -1334,8 +1334,38 @@ input[type="checkbox"]:checked ~ .menu_ul {
 
 }
 
-.copyright small {
-    color: #c7b299;
+.waxom_link {
+    color: #696969;
+    display: inline-block;
+    text-decoration: none;
+    border-right: 1px solid #252525;
+    padding-right: 5px;
+}
+
+.waxom_link:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.waxom_link:visited {
+    color: blue;
+}
+
+.faq_link {
+    color: #8b7d6c;
+    display: inline-block;
+    text-decoration: none;
+    border-right: 1px solid #252525;
+    padding-right: 5px;
+}
+
+.faq_link:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.faq_link:visited {
+    color: blue;
 }
 
 .disignet span {
@@ -1348,8 +1378,20 @@ input[type="checkbox"]:checked ~ .menu_ul {
     color: #474747;
 }
 
-.disignet small {
+.disignet_link {
     color: #959595;
+    text-decoration: none;
+    border-right: 1px solid #252525;
+    padding-right: 5px;
+}
+
+.disignet_link:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.disignet_link:visited {
+    color: blue;
 }
 
 @media (max-width: 576px) {
