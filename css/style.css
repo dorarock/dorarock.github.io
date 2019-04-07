@@ -33,7 +33,6 @@ body {}
 /*ШАПКА СТРАНИЦЫ*/
 .head {
     width: 100%;
-    /* min-height: 1024px; */
     background-image: url(../img/photoheader.jpg);
     background-color: aliceblue;
     background-repeat: no-repeat;
@@ -146,6 +145,16 @@ input[type="search"]:focus {
     width: 300px;
     transition: width 1s ease-out;
     background-position: right;
+}
+
+.label,
+#menu {
+    display: none;
+}
+
+input[type="checkbox"]:checked ~ .menu_ul {
+    visibility: visible;
+    display: block;
 }
 
 .arow_left {
@@ -1328,16 +1337,63 @@ input[type="search"]:focus {
         width: 575.98px;
     }
 
-    .mainmenu {
-        padding: 0;
-        margin: 0
+    .head {
+        background-size: cover;
     }
 
+    .mainmenu {
+        display: block;
+        padding: 0;
+        margin: 0;
+        padding-top: 0px;
+       /*  align-items: flex-start; */ 
+    }
+    
     .header_discript,
     .arow_left,
     .arow_right {
         display: none;
     }
+
+    .main_logo {
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-top: 10px;
+    }
+
+    .mainmenu_nav ul li {
+        display: block;
+    }
+
+    label {
+        display: block;
+        width: 55px;
+        height: 55px;
+        border: 1px solid transparent;
+        background-image: url(../img/burger-menu.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        position: absolute;
+        left: 450px;
+        top: 25px;
+    }
+
+    .menu_ul {
+        visibility: hidden;
+        display: none;
+        margin: 0 auto;
+        height: auto;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .menu_ul li {
+        height: 40px;
+        text-align: center;
+        background-color: transparent;
+        margin-top: 2px;
+    }
+
 
     /*КОНЕЦ ШАПКИ*/
 
