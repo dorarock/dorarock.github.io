@@ -1403,7 +1403,6 @@ input[type="checkbox"]:checked ~ .menu_ul {
 @media (max-width: 576px) {
 
     .body {
-        background-color: aqua;
         width: 575.98px;
     }
 
