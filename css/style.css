@@ -25,11 +25,11 @@
 
 body {
     width: 1920px;
+    margin: 0 auto;
 }
 
 .container {
     width: 100%;
-    margin: 0 auto;
 }
 
 /*ШАПКА СТРАНИЦЫ*/
@@ -1469,16 +1469,19 @@ input[type="checkbox"]:checked ~ .menu_ul {
     /*КОНЕЦ ШАПКИ*/
 
     .menu {
-        display: grid;
+        /*  display: grid;
         grid-template-columns: repeat(2, 249px [col-start]);
         grid-gap: 15px;
         grid-row-gap: 15px;
-        justify-content: center;
+        justify-content: center; */
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .flexmenu {
         padding: 0;
-        margin: 0;
+        min-width: 50%;
+        margin-bottom: 20px;
     }
 
     .waxom_ideas {
@@ -1500,6 +1503,10 @@ input[type="checkbox"]:checked ~ .menu_ul {
         grid-gap: 30px;
         grid-row-gap: 30px;
         justify-content: center;
+    }
+
+    .our_latest_title {
+        padding-top: 0px;
     }
 
     .waxom_video_presentation {
@@ -1535,29 +1542,29 @@ input[type="checkbox"]:checked ~ .menu_ul {
         position: relative;
         background-color: #fbfaf8;
         background-image: none;
-        background-repeat: no-repeat;
-        background-position: 30px 80px;
     }
 
     .hand_fone_wrapper {
         position: absolute;
-        left: 77px;
-        top: 95px;
-        width: 400px;
+        left: 30px;
+        top: 100px;
     }
 
     .hand_fone_title {
+        width: 300px;
         font-size: 20px;
     }
 
     .hand_fone_txt {
-        display: block;
-        width: 100%;
-        font-size: 16px;
+        width: 300px;
+        font-size: 14px;
     }
 
     .hand_fone_list li {
-        font-size: 12px;
+        font-size: 10px;
+        width: 250px;
+        padding: 0;
+        margin: 0;
     }
 
     .calc {
@@ -1566,7 +1573,9 @@ input[type="checkbox"]:checked ~ .menu_ul {
 
     .posts_flex {
         flex-direction: column;
-        margin-left: 90px;
+        justify-content: center;
+        align-items: center;
+        /* margin-left: 90px; */
     }
 
     .posts_article {
@@ -1583,8 +1592,10 @@ input[type="checkbox"]:checked ~ .menu_ul {
     }
 
     .posts_txt {
-        margin-left: 85px;
-        width: 400px;
+        display: block;
+        text-align: center;
+        margin-left: 0px;
+        width: 100%;
         font-size: 12px;
     }
 
@@ -1621,6 +1632,247 @@ input[type="checkbox"]:checked ~ .menu_ul {
     .footer_wrapper {
         display: flex;
         flex-direction: column;
+        align-items: center;
+    }
+
+    .footer_copy {
+        display: block;
+        text-align: center;
+    }
+
+    .copyright {
+        margin-bottom: 20px;
+    }
+}
+
+/* @media (max-width: 575.98px) {
+
+    body {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .head {
+        background-size: cover;
+    }
+
+    .header_discript,
+    .arow_left,
+    .arow_right {
+        display: none;
+    }
+
+    .mainmenu {
+        display: block;
+        padding: 0;
+        margin: 0;
+    }
+
+    .main_logo {
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-top: 10px;
+        margin-left: 20px;
+        float: left;
+    }
+
+    .mainmenu_nav ul li {
+        display: block;
+    }
+
+    label {
+        display: block;
+        width: 55px;
+        height: 55px;
+        border: 1px solid transparent;
+        background-image: url(../img/burger-menu.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        margin-left: auto;
+        margin-right: 50px;
+    }
+
+    .menu_ul {
+        visibility: hidden;
+        display: none;
+        margin: 0 auto;
+        height: auto;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .menu_ul li {
+        height: 40px;
+        text-align: center;
+        background-color: transparent;
+        margin-top: 2px;
+    }
+
+
+    КОНЕЦ ШАПКИ
+
+    .menu {
+        display: grid;
+        grid-template-columns: repeat(2, 249px [col-start]);
+        grid-gap: 15px;
+        grid-row-gap: 15px;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .flexmenu {
+        padding: 0;
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
+    .waxom_ideas {
+        display: none;
+    }
+
+    .waxom_ideas_footer {
+        display: none;
+    }
+
+    .our_latest_menu_btn {
+        font-size: 10px;
+        padding: 0px 10px 0px 10px;
+    }
+
+    .our_latest_wrapper {
+        display: grid;
+        grid-template-columns: repeat(1, 370px [col-start]);
+        grid-gap: 30px;
+        grid-row-gap: 30px;
+        justify-content: center;
+    }
+
+    .our_latest_title {
+        padding-top: 0px;
+    }
+
+    .waxom_video_presentation {
+        height: 200px;
+    }
+
+    .waxom_video_presentation_item {
+        top: 20px;
+        left: 0px;
+    }
+
+    .waxom_video_presentation_item h2 {
+        font-size: 15px;
+    }
+
+    .waxom_video_presentation_item span {
+        font-size: 10px;
+        width: auto;
+    }
+
+    .waxom_video_play_arrow,
+    .waxom_video_play {
+        display: none;
+    }
+
+    .waxom_video_presentation video {
+        width: 100%;
+        height: 200px;
+    }
+
+    .hand_fone {
+        width: 100%;
+        position: relative;
+        background-color: #fbfaf8;
+        background-image: none;
+    }
+
+    .hand_fone_wrapper {
+        position: absolute;
+        left: 10px;
+        top: 100px;
+        width: 400px;
+    }
+
+    .hand_fone_title {
+        font-size: 20px;
+    }
+
+    .hand_fone_txt {
+        display: block;
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .hand_fone_list li {
+        font-size: 10px;
+    }
+
+    .calc {
+        display: none;
+    }
+
+    .posts_flex {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 90px;
+    }
+
+    .posts_article {
+        margin-bottom: 20px;
+    }
+
+    .posts_article_center {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .posts_header {
+        font-size: 20px;
+    }
+
+    .posts_txt {
+        display: block;
+        text-align: center;
+        margin-left: 0px;
+        width: 400px;
+        font-size: 12px;
+    }
+
+    .partners_flex {
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 200px [col-start]);
+        grid-gap: 0px;
+        grid-row-gap: 10px;
+        justify-content: center;
+        padding-top: 30px;
+        margin-left: 90px;
+        padding-bottom: 30px;
+    }
+
+    .partners {
+        min-height: 250px;
+    }
+
+    .partners_src {
+        height: 100px;
+        margin-right: 0px;
+        margin-top: 0px;
+        display: block;
+        text-align: center;
+    }
+
+    .partners_src img {
+        width: auto;
+        height: 100px;
+    }
+
+    .footer_wrapper {
+        display: flex;
+        flex-direction: column;
         padding-left: 100px;
         box-sizing: border-box;
     }
@@ -1633,4 +1885,4 @@ input[type="checkbox"]:checked ~ .menu_ul {
     .copyright {
         margin-bottom: 20px;
     }
-}
+} */
