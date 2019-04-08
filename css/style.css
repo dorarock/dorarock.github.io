@@ -23,10 +23,12 @@
     src: url(../fonts/raleway/raleway-extrabold.ttf);
 }
 
-body {}
+body {
+    width: 1920px;
+}
 
 .container {
-    width: 1920px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -1400,14 +1402,11 @@ input[type="checkbox"]:checked ~ .menu_ul {
     color: blue;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 575.98px) {
 
-    .body {
-        width: 575.98px;
-    }
-
-    .container {
-        width: 575.98px;
+    body {
+        width: 100%;
+        box-sizing: border-box;
     }
 
     .head {
