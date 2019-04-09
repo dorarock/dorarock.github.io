@@ -1001,7 +1001,6 @@ input[type="checkbox"]:checked ~ .menu_ul {
 
 .posts_article_txt {
     display: block;
-    width: 297px;
     height: 36px;
     color: #8c8c8c;
     font-family: 'montserrat-l';
