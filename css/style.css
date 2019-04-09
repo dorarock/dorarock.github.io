@@ -1009,6 +1009,7 @@ input[type="checkbox"]:checked ~ .menu_ul {
     line-height: 22px;
     padding-left: 29px;
     margin-top: 19px;
+    max-width: 287px;
     transition: all .5s ease-out;
 }
 
