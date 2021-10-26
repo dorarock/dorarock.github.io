@@ -35,6 +35,8 @@ a {
         background-color: #06303A;
         background-size: cover;
         overflow: hidden;
+        padding-bottom: 50px;
+
     }
     .container {
         width: 100%;
@@ -103,6 +105,7 @@ a {
         background: url(../images/Bg_768.png) no-repeat;
         background-color: #06303A;
         background-size: cover;
+
     }
     .container {
         max-width: 583px;
@@ -140,6 +143,7 @@ a {
         background: url(../images/Bg_1024.png) no-repeat;
         background-size: cover;
         background-color: #06303A;
+        padding-bottom: 0;
     }
     .container {
         max-width: 940px;
