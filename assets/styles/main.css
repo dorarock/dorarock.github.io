@@ -1,0 +1,204 @@
+@font-face {
+    font-family: "SB Sans Display Regular";
+    src: url('../fonts/SBSansDisplay-Regular.otf');
+}
+@font-face {
+    font-family: "SB Sans Display SemiBold";
+    src: url('../fonts/SBSansDisplay-SemiBold.otf');
+}
+
+* {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+.main {
+    background-color: #06303A;
+}
+.content {
+
+}
+.container {
+
+}
+
+@media (min-width: 320px) {
+    .main {
+        width: 100%;
+        height: 100vh;
+        background-image: url(../images/Bg_375.png);
+        background-repeat: no-repeat;
+        background-color: #06303A;
+        background-size: cover;
+        overflow: hidden;
+    }
+    .container {
+        width: 100%;
+        max-width: 343px;
+        margin: 0 auto;
+    }
+    .content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .content_image {
+        width: 375px;
+        height: 333px;
+        background: url(../images/people.png) no-repeat center;
+        background-size: cover;
+
+        margin-bottom: 16px;
+    }
+    .content_text {
+        width: 100%;
+    }
+    .content_text-title {
+        font-family: "SB Sans Display SemiBold";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 44px;
+        line-height: 100%;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+        text-shadow: 0px 0px 12px #2FFE57;
+        margin-bottom: 24px;
+    }
+    .content_text-small-title {
+        font-family: "SB Sans Display SemiBold";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 120%;
+        letter-spacing: 0.01em;
+        color: #FFFFFF;
+        text-shadow: 0px 0px 12px #2FFE57;
+        margin-bottom: 16px;
+    }
+    .content_text-description {
+        font-family: "SB Sans Display Regular";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 130%;
+        letter-spacing: 0.01em;
+        color: #FFFFFF;
+    }
+    .content_text-description-bold {
+        font-family: "SB Sans Display Regular";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 130%;
+        letter-spacing: 0.01em;
+        color: #FFFFFF;
+    }
+}
+@media (min-width: 767px) {
+    .main {
+        background: url(../images/Bg_768.png) no-repeat;
+        background-color: #06303A;
+        background-size: cover;
+    }
+    .container {
+        max-width: 583px;
+    }
+    .content_image {
+        width: 600px;
+        height: 532px;
+
+        margin-bottom: 0px;
+    }
+    .content_text {
+        width: 100%;
+    }
+    .content_text-title {
+        font-size: 64px;
+        line-height: 100%;
+        margin-bottom: 32px;
+    }
+    .content_text-small-title {
+        font-size: 24px;
+        line-height: 120%;
+        margin-bottom: 24px;
+    }
+    .content_text-description {
+        font-size: 24px;
+        line-height: 130%;
+    }
+    .content_text-description-bold {
+        font-size: 24px;
+        line-height: 130%;
+    }
+}
+@media (min-width: 1023px) {
+    .main {
+        background: url(../images/Bg_1024.png) no-repeat;
+        background-size: cover;
+        background-color: #06303A;
+    }
+    .container {
+        max-width: 940px;
+    }
+    .content {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .content_image {
+        width: 512px;
+        height: 454px;
+    }
+    .content_text {
+        width: 428px;
+    }
+    .content_text-title {
+        font-size: 56px;
+        line-height: 100%;
+    }
+    .content_text-small-title {
+        font-size: 24px;
+        line-height: 120%;
+    }
+    .content_text-description {
+        font-size: 22px;
+        line-height: 130%;
+    }
+    .content_text-description-bold {
+        font-size: 22px;
+        line-height: 130%;
+    }
+}
+@media (min-width: 1439px) {
+    .main {
+        background: url(../images/Bg_1400.png) no-repeat;
+        background-size: cover;
+        background-color: #06303A;
+    }
+    .container {
+        max-width: 1264px;
+    }
+    .content_image {
+        width: 716px;
+        height: 635px;
+    }
+    .content_text {
+        width: 548px;
+    }
+    .content_text-title {
+        font-size: 64px;
+        line-height: 100%;
+    }
+    .content_text-description {
+        font-size: 23px;
+        line-height: 130%;
+    }
+    .content_text-description-bold {
+        font-size: 23px;
+        line-height: 130%;
+    }
+}
