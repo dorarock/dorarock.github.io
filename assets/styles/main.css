@@ -169,10 +169,10 @@ a {
     .content_text {
         width: 548px;
     }
-    /*.content_text-title {*/
-    /*    font-size: 48px;*/
-    /*    line-height: 120%;*/
-    /*}*/
+    .content_text-title {
+        font-size: 48px;
+        line-height: 120%;
+    }
     .content_text-description {
         font-size: 23px;
         line-height: 130%;
