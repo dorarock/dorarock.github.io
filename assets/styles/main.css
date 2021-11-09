@@ -35,8 +35,7 @@ a {
         background-color: #06303A;
         background-size: cover;
         overflow: hidden;
-        padding-bottom: 50px;
-
+        padding-bottom: 20px;
     }
     .container {
         width: 100%;
@@ -47,6 +46,7 @@ a {
         width: 100%;
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
     .content_image {
         width: 375px;
@@ -54,7 +54,7 @@ a {
         background: url(../images/people.png) no-repeat center;
         background-size: cover;
 
-        margin-bottom: 16px;
+        margin-bottom: 40px;
     }
     .content_text {
         width: 100%;
@@ -63,20 +63,9 @@ a {
         font-family: "SB Sans Display SemiBold";
         font-style: normal;
         font-weight: 600;
-        font-size: 44px;
-        line-height: 100%;
-        letter-spacing: 0.02em;
-        color: #FFFFFF;
-        text-shadow: 0px 0px 12px #2FFE57;
-        margin-bottom: 24px;
-    }
-    .content_text-small-title {
-        font-family: "SB Sans Display SemiBold";
-        font-style: normal;
-        font-weight: 600;
-        font-size: 24px;
+        font-size: 32px;
         line-height: 120%;
-        letter-spacing: 0.01em;
+        letter-spacing: 0.02em;
         color: #FFFFFF;
         text-shadow: 0px 0px 12px #2FFE57;
         margin-bottom: 16px;
@@ -110,22 +99,20 @@ a {
     .container {
         max-width: 583px;
     }
+    .content {
+        align-items: unset;
+    }
     .content_image {
         width: 600px;
         height: 532px;
 
-        margin-bottom: 0px;
-    }
-    .content_text {
-        width: 100%;
-    }
-    .content_text-title {
-        font-size: 64px;
-        line-height: 100%;
         margin-bottom: 32px;
     }
-    .content_text-small-title {
-        font-size: 24px;
+    .content_text {
+        width: 454px;
+    }
+    .content_text-title {
+        font-size: 32px;
         line-height: 120%;
         margin-bottom: 24px;
     }
@@ -156,25 +143,14 @@ a {
     .content_image {
         width: 512px;
         height: 454px;
+        margin-bottom: 0;
     }
     .content_text {
         width: 428px;
     }
     .content_text-title {
-        font-size: 56px;
+        font-size: 44px;
         line-height: 100%;
-    }
-    .content_text-small-title {
-        font-size: 24px;
-        line-height: 120%;
-    }
-    .content_text-description {
-        font-size: 22px;
-        line-height: 130%;
-    }
-    .content_text-description-bold {
-        font-size: 22px;
-        line-height: 130%;
     }
 }
 @media (min-width: 1439px) {
@@ -194,8 +170,8 @@ a {
         width: 548px;
     }
     .content_text-title {
-        font-size: 64px;
-        line-height: 100%;
+        font-size: 48px;
+        line-height: 120%;
     }
     .content_text-description {
         font-size: 23px;
